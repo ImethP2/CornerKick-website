@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/query.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script/query.js"></script>
+        <title>Query</title>
+        <link rel="icon" href="images/logo.png" >
+    </head>
+    <body> 
+        <div class = body>
+            <header>
+                <!-- the navbar container  -->
+                <nav id="navbar" class="navbar">
+                    <img id="logo" src="images/logo.png" alt="Logo">
+                    <div id="nav">
+                        <a href="main.html">Home</a>
+                        <a href="store.html" >Shop</a>
+                        <div class="dropdown">
+                            <button class="dropbtn-nav" >
+                                Information
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="history.html">History of Soccer</a>
+                                <a href="Leagues.html">Top Leagues</a>
+                                <a href="women'sfootball.html">Women's Soccer</a>
+                                <a href="clubs.html">Top Clubs</a>
+                            </div>
+                        </div>
+                        <a href="ImageGall.html" >Gallery</a>
+                        <a href="sitemap.html" >Site map</a>
+                        <a href="quiz.html" >Quiz</a>
+                        <div class="dropdown">
+                            <button class="dropbtn-nav current" >About Us
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="query.html" class = "current">Ask Us</a>
+                                <a href="studentdetail.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class = "main-container">
+                <!-- creating the glass container -->
+                <div class = "query-box" id = "query-box">
+                    <div class="title" id="white">
+                        Score the answers you need 
+                        <div>
+                            with our 
+                            <span style = "color:red;">soccer Q&A!</span>
+                        </div>
+                    </div>
+                    <div id = "q-box">
+                        <!-- getting the inputs -->
+                            <div class="input__box" id="fname">
+                                <div class="input__box__title" id="fname-t">FIRST NAME</div>
+                                <input type="text" placeholder="FIRST NAME" id="fname-b" class="text-box" name="fname-b">
+                            </div>
+                            <div class="input__box" id = "lname">
+                                <div class="input__box__title" id = "lname-t">LAST NAME</div>
+                                <input type="text" placeholder="LAST NAME" id = "lname-b" name = "lname-b" class="text-box">
+                            </div>
+                            <div class="input__box" id = "email">
+                                <div class="input__box__title" id = "email-t">EMAIL</div>
+                                <input type="text" placeholder="EMAIL" id = "email-b" name = "email-b" class="text-box">
+                            </div>
+                            <div class="input__box" id = "prob">
+                                <div class="input__box__title" id = "prob-t">HOW CAN WE HELP YOU ?</div>
+                                <input type="text" placeholder="Describe here your problem." id = "prob-b" name = "prob-b" class="text-box">
+                            </div>
+                            <!-- the button to view the query -->
+                            <div class = "btn">
+                                <a href="" id = "verify" onclick="return verify()">
+                                    <span class="btn-text query-btns">View Your Query</span>
+                                </a>
+                            </div>
+                    </div>
+                    <div class=" para-1">
+                        <!-- page description title -->
+                        <div class = "para-1-title">
+                            <h1 id = "para-title">
+                                You Ask, We Answer!
+                            </h1>
+                        </div>
+                        <!-- page description  -->
+                        <div class = "para-1-para">
+                            <p id = "para">
+                                Welcome to our Ask Us page! Have a question about soccer? We've got answers! From the basics to advanced topics, our team of experts is here to help. Submit your question below and we'll get back to you ASAP with the most accurate and helpful response.
+                            </p> 
+                        </div>
+                        </div>
+                    </div>
+                    <!-- creating the query viewer -->
+                    <div class="details-box details-text" id="details-box">
+                        <form class="filled_form" name="filled_form" action="mailto:imeth.20210974@iit.ac.lk" method="get">
+                            <h3 class="detail_box_header">Entered Details</h3>
+                            <div class="border">
+                                <label class="details-labels"><b>First Name     : </b></label> <label id="inputfName"></label> <br>
+                                <label class="details-labels"><b>Last Name      : </b></label> <label id="inputlName"></label> <br>
+                                <label class="details-labels"><b>Email          : </b></label> <label id="inputEmail"></label><br>
+                                <label class="details-labels"><b>Your Problem   : </b></label> <label id="inputQuery"></label>
+                            </div>
+                            <!-- opening the email app to send the query to the server -->
+                            <button class="btn btn_duo send_btn" type="submit">
+                                <span class="btn-text query-btns">Send</span>
+                            </button>
+                            <!-- letting the user to edit the query  -->
+                            <button class="btn btn_duo edit_btn" onclick="return edit()">
+                                <span class="btn-text query-btns">Edit</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- the footer  -->
+            <div class="footer">
+                <div class="row-footer">
+                    <div class="column-footer" style="background-color:#282525;">
+                        <p><img src="images/logo.png" alt="logo" class="logo-footer"></p>
+                        <h1 style="color: #dbd5d5;">Corner Kick</h1>
+                        <p>Just Kick It..</p><br><br>
+                        <p style="text-align: justify; color: #676161;">From aspiring amateurs to seasoned pros, our football company provides premier equipment, top-tier coaching, and a thriving community for fans and players. Experience the passion and expertise of our team for yourself and take your game to the next level.</p>
+                    </div>
+                    <div class="column-footer" style="background-color:#282525;">
+                        <h2 style="color: #dbd5d5;">Keep Connected with Us..</h2>
+                        <p style="text-align: left; padding-left: 150px; color: #676161;"><br>
+                            <a href="#" class="fa fa-facebook" id = "fb"></a> Like us on FaceBook<br>
+                            <a href="#" class="fa fa-twitter" id = "t"></a>Follow us on Twitter<br>
+                            <a href="#" class="fa fa-google" id = "g"></a>Visit Us on Google<br>
+                            <a href="#" class="fa fa-linkedin" id = "li"></a>Add us on LinkedIn<br>
+                            <a href="#" class="fa fa-instagram" id = "ig"></a>Follow us on Instergram
+                        </p>
+                    </div>
+                    <div class="column-footer" style="background-color:#282525;">
+                        <h2 style="color: #dbd5d5;">Contact Information</h2><br>
+                        <p style="text-align: left; padding-left: 100px; color: #676161; font-size:large;">
+                            Adress  : VV77+H8R, 47th Lane A, Colombo<br><br>
+                            Contact : +94 77 158 9587<br><br>
+                            Email   : cornerKick@gmail.com <br>
+                        </p>
+                    </div>
+                </div>
+                <p style="background-color:#0b0b0b; height: fit-content;  padding-top: 10px;">© All right Reversed.CornerKick
+                    <br>
+                    Web page done by :<a href="imeth.html">Mr. Imeth Pathirana</a> 
+                </p>
+            </div> 
+                
+        </div>
+        
+    </body>
+</html>

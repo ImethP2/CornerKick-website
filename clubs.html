@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/clubs.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script/clubs.js"></script>
+        <title>Top Soccer Clubs</title>
+        <link rel="icon" href="images/logo.png">
+    </head>
+    <body> 
+        <header>
+            <nav id="navbar" class="navbar">
+                <img id="logo" src="images/logo.png" alt="Logo">
+                <div id="nav">
+                    <a href="main.html" >Home</a>
+                    <a href="store.html" >Shop</a>
+                    <div class="dropdown">
+                        <button class="dropbtn-nav current" >
+                            Information
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="history.html">History of Soccer</a>
+                            <a href="Leagues.html">Top Leagues</a>
+                            <a href="women'sfootball.html">Women's Soccer</a>
+                            <a href="clubs.html" class = "current">Top Clubs</a>
+                        </div>
+                    </div>
+                    <a href="ImageGall.html" >Gallery</a>
+                    <a href="sitemap.html" >Site map</a>
+                    <a href="quiz.html" >Quiz</a>
+                    <div class="dropdown">
+                        <button class="dropbtn-nav" >About Us
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="query.html">Ask Us</a>
+                            <a href="studentdetail.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- The overlay (site navigation)-->
+        <div id="site-nav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+            <a href="#top" onclick="closeNav()">Top</a>
+            <a href="#rm" onclick="closeNav()">Real Madrid</a>
+            <a href="#b" onclick="closeNav()">Barcelona</a>
+            <a href="#lp" onclick="closeNav()">Liverpool</a>
+            <a href="#mu" onclick="closeNav()">Manchester United</a>
+            <a href="#j" onclick="closeNav()">Juventus</a>
+            <a href="#bm" onclick="closeNav()">Bayern Munchen</a>
+            </div>
+        
+        </div>
+
+        <!-- the main container  -->
+        <div class = "main-container">
+            <!-- the first container  -->
+            <div class = "front-container" id = "top">
+                <!-- the circular loop  -->
+                <div id = "bg-loop">
+                    <img src = "images/loop.png" id = "loop" alt="background loop">
+                </div>
+                <!-- the red box -->
+                <div id = "bg-rect"></div>
+                <!-- the automated sliide show  -->
+                <div class = "slides" id ="player-ss">
+                    <img src = "images/cr7.png" class = "players" id = "cr7-ss" alt="Ronaldo">
+                    <img src = "images/kylian-mbappe-42.png" class="players" id = "mbappe-ss" alt="Mbappé">
+                    <img src = "images/messi-ss.png" class="players" id = "messi-ss" alt="Messi">
+                    <img src = "images/neymar.png" class ="players" id = "neymar-ss" alt="Neymar Jr.">
+                </div>
+                <!-- web page title division  -->
+                <div id = "title">
+                    <!-- webpage title  -->
+                    <h1 id = "h1-t">
+                        World's Best <br>Soccer Clubs
+                    </h1>
+                    <!-- web page description -->
+                    <h3 id = "h3-t">
+                        Experience the world's best soccer clubs,<br> legendary players,<br> and epic showdowns!
+                    </h3>
+                </div>
+                <!-- button to open the website navigation overlay -->
+                <div id = "btn-open">
+                    <span onclick="openNav()" id = "open">Site Menu</span>
+                </div>
+            </div>
+
+            <!-- container for the real madrid club -->
+            <div class = "second-container" id = "rm">
+                <!-- the logo container -->
+                <div class = "logo-container" id="left-c-1">
+                    <!-- the logo -->
+                    <img src="images/assets/real-madrid.png" alt="Real Madrid" id = "real-madrid" class = "logo">
+                </div>
+                <!-- the red bar -->
+                <div class="left-bar"></div>
+                <!-- club name  -->
+                <div class = "club-name" id = "l-t-1">
+                    <h1 class = "h1">Real Madrid</h1>
+                </div>
+                <!-- the contents for the Club -->
+                <div class = "club-para" id = "l-p-1">
+                    <p id = "l-para-1" class = "para">
+                        Real Madrid is one of the most successful soccer clubs in the world, with a rich history dating back to 1902. Over the years, they have won numerous domestic and international titles, including 13 UEFA Champions League titles. Real Madrid has had some of the most iconic players in soccer history, including Cristiano Ronaldo, Zinedine Zidane, and Alfredo Di Stefano. The club's fierce rivalry with Barcelona, known as El Clasico, is one of the most intense in all of sports. Real Madrid's attacking style of play and dominance in the sport have made them a fan favorite worldwide.
+                    </p>
+                </div>
+            </div>
+
+            <!-- container for the barcelona Club -->
+            <div class = "third-container" id = "b">
+                <div class = "logo-container" id = "right-c-1">
+                    <img src="images/assets/barcelona.png" alt="barcelona" id = "barcelona" class = "logo">
+                </div>
+                <div class="right-bar"></div>
+                <div class = "club-name" id = "r-t-1">
+                    <h1 class = "h1">Barcelona</h1>
+                </div>
+                <div class = "club-para" id = "r-p-1">
+                    <p id = "r-para-1" class = "para">
+                        Barcelona, one of the most popular soccer clubs in the world, was founded in 1899. The club has a rich history and has won numerous domestic and international titles, including 5 UEFA Champions League titles. Barcelona is known for their signature style of play, tiki-taka, which emphasizes possession and quick passing. Some of the most iconic players in soccer history have played for Barcelona, including Lionel Messi, Ronaldinho, and Johan Cruyff. Barcelona's fierce rivalry with Real Madrid, known as El Clasico, is one of the most intense in the sport. The club's success and passion for the game have made them a fan favorite worldwide.
+                    </p>
+                </div>
+            </div>
+
+            <!-- container for the liverpool club -->
+            <div class = "fourth-container" id = "lp">
+                <div class = "logo-container" id="left-c-2">
+                    <img src="images/assets/liverpool.png" alt="liverpool" id = "liverpool" class = "logo">
+                </div>
+                <div class="left-bar"></div>
+                <div class = "club-name" id = "l-t-2">
+                    <h1 class = "h1">Liverpool</h1>
+                </div>
+                <div class = "club-para" id = "l-p-2">
+                    <p id = "l-para-2" class="para">
+                        Liverpool Football Club, founded in 1892, is one of the most successful soccer clubs in England. The club has won numerous domestic and international titles, including 6 UEFA Champions League titles. Liverpool is known for their high-energy and attacking style of play, with some of the most iconic players in soccer history, such as Steven Gerrard, Kenny Dalglish, and Ian Rush. The club's passionate fan base, known as the "Kop," is one of the most dedicated in all of sports. Liverpool's rivalry with Manchester United is one of the most fiercely contested in the sport. The club's commitment to excellence and tradition has earned them a place as one of the world's top soccer teams.
+                    </p>
+                </div>
+            </div>
+
+            <!-- container for the manchester united club -->
+            <div class = "fifth-container" id = "mu">
+                <div class = "logo-container" id = "right-c-2">
+                    <img src="images/assets/manchester-united.png" alt="Manchester United" id = "manchester-united" class = "logo">
+                </div>
+                <div class="right-bar"></div>
+                <div class = "club-name" id = "r-t-2">
+                    <h1 class = "h1">Manchester United</h1>
+                </div>
+                <div class = "club-para" id = "r-p-2">
+                    <p id = "r-para-2" class="para">
+                        Manchester United Football Club, founded in 1878, is one of the most successful soccer clubs in English history, with numerous domestic and international titles, including 3 UEFA Champions League wins. Some of the most iconic players in soccer history have played for Manchester United, including George Best, Eric Cantona, and Cristiano Ronaldo. The club's intense rivalry with Liverpool is one of the most hotly contested in the sport, with a loyal fan base known as the "Red Army". Manchester United's commitment to excellence and winning has made them one of the most popular and successful soccer teams worldwide.
+                    </p>
+                </div>
+            </div>
+
+            <!-- container for the juventus club -->
+            <div class = "sixth-container" id = "j">
+                <div class = "logo-container" id="left-c-3">
+                    <img src="images/assets/juventus.png" alt="Juventus" id = "juventus" class = "logo">
+                </div>
+                <div class="left-bar"></div>
+                <div class = "club-name" id = "l-t-3">
+                    <h1 class = "h1">Juventus</h1>
+                </div>
+                <div class = "club-para" id = "l-p-3">
+                    <p id = "l-para-3" class = "para">
+                        Juventus Football Club, founded in 1897, is one of the most successful soccer clubs in Italian history, with numerous domestic and international titles, including 2 UEFA Champions League wins. The club is known for its attacking style of play, with some of the most iconic players in soccer history, such as Michel Platini, Alessandro Del Piero, and Cristiano Ronaldo. Juventus' rivalry with AC Milan is one of the most intense in the sport. The club's passionate fan base, known as the "Bianconeri," is one of the largest and most dedicated in Italy. Juventus' commitment to excellence and tradition has made them one of the most respected and successful soccer teams in the world.
+                    </p>
+                </div>
+            </div>
+
+            <!-- container for the Bayern munchen club -->
+            <div class = "seventh-container" id = "bm">
+                <div class = "logo-container" id = "right-c-3">
+                    <img src="images/assets/bayern-munchen.png" alt="Bayern Munchen" id = "bayern-munchen" class = "logo">
+                </div>
+                <div class="right-bar"></div>
+                <div class = "club-name" id = "r-t-3">
+                    <h1 class = "h1" >Bayern Munchen</h1>
+                </div>
+                <div class = "club-para" id = "r-p-3">
+                    <p id = "r-para-3" class = "para">
+                        Bayern Munich Football Club, founded in 1900, is one of the most successful soccer clubs in German history, with numerous domestic and international titles, including 6 UEFA Champions League wins. The club is known for its attacking and dominating style of play, with some of the most iconic players in soccer history, such as Franz Beckenbauer, Gerd Muller, and Franz Roth. Bayern Munich's intense rivalry with Borussia Dortmund is one of the most heated in German soccer. The club's passionate fan base, known as the "FC Hollywood" or "Die Roten," is one of the largest and most dedicated in the world. Bayern Munich's commitment to excellence and their dominant play has made them one of the most successful and well-respected soccer teams in the world.
+                    </p>
+                </div>
+            </div>
+            <!-- the footer  -->
+            <div class="footer">
+                <div class="row-footer">
+                    <div class="column-footer" style="background-color:#282525;">
+                    <p><img src="images/logo.png" alt="logo" class="logo-footer"></p>
+                    <h1 style="color: #dbd5d5;">Corner Kick</h1>
+                    <p>Just Kick It..</p><br><br>
+                    <p style="text-align: justify; color: #676161;">From aspiring amateurs to seasoned pros, our football company provides premier equipment, top-tier coaching, and a thriving community for fans and players. Experience the passion and expertise of our team for yourself and take your game to the next level.</p>
+                    </div>
+                    <div class="column-footer" style="background-color:#282525;">
+                    <h2 style="color: #dbd5d5;">Keep Connected with Us..</h2>
+                    <p style="text-align: left; padding-left: 150px; color: #676161;"><br>
+                        <a href="#" class="fa fa-facebook"></a> Like us on FaceBook<br>
+                        <a href="#" class="fa fa-twitter"></a>Follow us on Twitter<br>
+                        <a href="#" class="fa fa-google"></a>Visit Us on Google<br>
+                        <a href="#" class="fa fa-linkedin"></a>Add us on Google<br>
+                        <a href="#" class="fa fa-instagram"></a>Follow us on Instergram
+                    </p>
+                    </div>
+                    <div class="column-footer" style="background-color:#282525;">
+                    <h2 style="color: #dbd5d5;">Contact Information</h2><br>
+                    <p style="text-align: left; padding-left: 100px; color: #676161; font-size:large;">
+                        Adress  : VV77+H8R, 47th Lane A, Colombo<br><br>
+                        Contact : +94 77 158 9587<br><br>
+                        Email   : cornerKick@gmail.com <br>
+                    </p>
+                    </div>
+                </div>
+                <p style="background-color:#0b0b0b; height: fit-content;  padding-top: 10px;">© All right Reversed.CornerKick
+                    <br>
+                    Web page done by :<a href="imeth.html">Mr. Imeth Pathirana</a> 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

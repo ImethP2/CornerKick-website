@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="3.8;url=main.html" > <!-- Redirecting -->
+    <link rel="stylesheet" href="css/prsnt_stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>CornerKick.net</title>
+</head>
+<body>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="images/presentation.mp4" type="video/mp4">
+    </video>
+    <section style="padding-bottom: 200px; padding-right: 100px;">
+        <div class="content" id="Corner" style="display: none;">
+          <h2>Corner </h2>
+          <h2>Corner</h2>
+        </div>
+    </section>
+    <section style="padding-top: 100px;  padding-right: 500px;">
+        <div class="content" id="Kick" style="display: none;">
+            <h2>Kick</h2>
+            <h2>Kick</h2>
+        </div>
+    </section>
+    <div class="box">
+        <div class="students"> <h1>Sasiru Jayawardhana <br><br>sasiu.20210801@gmail.com</h1><br><hr style="width:75%;text-align:right;margin-right:0; margin-bottom: 20px;">
+                                <h1>Imeth pathirana <br><br>imeth.20210974@gmail.com</h1><br><hr style="width:75%;text-align:right;margin-right:0 ; margin-bottom: 20px; ">
+                                <h1> Udeshi Idamagedara <br><br>udeshi.20211094@gmail.com</h1><br><hr style="width:75%;text-align:right;margin-right:0 ;margin-bottom: 20px;">
+                                <h1>Jonathana Rajaratnam <br><br> jonathan.20210932@gmail.com</h1><br><hr style="width:75%;text-align:right;margin-right:0;">
+        </div>
+    </div>
+    <!-- javaScript -->
+<script>
+    function CornerAppear() { 
+    document.getElementById("Corner").style.display = "inline"; 
+    }
+
+    //this calls the function above, 4700 milliseconds is 4.7 seconds
+    setTimeout("CornerAppear()", 2850);
+
+    function KickAppear() { 
+    document.getElementById("Kick").style.display = "inline"; 
+    }
+
+    //this calls the function above, 4700 milliseconds is 4.7 seconds.
+    setTimeout("KickAppear()", 2850);
+</script>
+</body>
+</html>
